@@ -1,6 +1,6 @@
 # 🦁 Algolions Node Client (MM Aladdin Node)
 
-This is the official decentralized node client for the Algolions / Micro Aladdin compute network.
+This is the official decentralized node client for the Algolions compute network.
 Run your own node to process ML jobs, earn rewards, and help power a global, censorship-resistant AI infrastructure.
 
 ---
