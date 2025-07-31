@@ -1,0 +1,9 @@
+{
+  "wallet_address": "",
+  "private_key": "",
+  "api_base": "",
+  "poll_limit": 10,
+  "abi_path": "JobLogger.json",
+  "contract_address": "",
+  "eth_node_url": ""
+}

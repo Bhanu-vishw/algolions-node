@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  microaladdin-node:
+    build:
+      context: .    # Root of NODES dir
+      dockerfile: Dockerfile
+    container_name: microaladdin-node
+    restart: unless-stopped
+    mem_limit: 3g
+    cpus: 1.5
+    ulimits:
+      nproc: 256
+      nofile:
+        soft: 2048
+        hard: 2048
+    # environment:
+    #   - RANDOM_POLL_MIN=0.1
+    #   - RANDOM_POLL_MAX=0.5
+    #   - RANDOM_CLAIM_MIN=0
+    #   - RANDOM_CLAIM_MAX=0.1
+    volumes:
+      - .:/nodes
+    networks:
+      - aladdin-net
+    # ports:  # Not needed unless you expose ports
+
+networks:
+  aladdin-net:
+    external: true
